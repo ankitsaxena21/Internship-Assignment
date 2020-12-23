@@ -1,6 +1,6 @@
 # Internship-Assignment
 
-### [Live Site](https://react-alan-ai-news.netlify.app/)
+### [Live Site](https://assignment-frontend-intern.netlify.app/)
 
 ![Post and Notepad app](https://raw.githubusercontent.com/ankitsaxena21/Internship-Assignment/main/test2.png)
 
