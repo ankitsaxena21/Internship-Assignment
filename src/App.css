@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+.post_app {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* Posts style */
+.posts {
+  width: 50%;
+  margin-left: 25%;
+  border: 1px solid #e6ecf0;
+}
+.posts__home {
+  width: 100%;
+  top: 0;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  background: rgb(231, 96, 6);
+  color: white;
+  text-decoration: none !important;
+  border: none;
+}
+.create {
+  padding-top: 30px;
+  border: 1px solid #d7d7d8;
+  padding: 20px;
+}
+.create__first {
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+}
+.create__img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.create__img img {
+  width: 100%;
+  height: 100%;
+}
+.create__input {
+  margin-left: 20px;
+}
+.create__control {
+  min-width: 400px;
+  min-height: 50px;
+  background: rgb(223, 223, 223);
+  color: rgb(78, 76, 76);
+  border: none;
+  padding: 8px;
+  outline: none;
+}
+.create__second {
+  margin-left: 20px;
+  margin-top: 15px;
+  display: flex;
+}
+.create__icons {
+  width: 50%;
+}
+.ic {
+  margin: 0 6px;
+  font-size: 20px;
+  cursor: pointer;
+  color:#FF6C40;
+}
+.create__btn {
+  width: 50%;
+  text-align: right;
+  margin-right: 20px;
+}
+.create__btn button {
+  text-decoration: none;
+  background: #FF6C40;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 20px;
+}
+
+.postss {
+  padding: 20px;
+  border-bottom: 1px solid #e6ecf0;
+}
+.postss__first {
+  display: flex;
+  align-items: center;
+}
+.posts__first__img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.posts__first__img img {
+  width: 100%;
+  height: 100%;
+}
+.posts__first__name {
+  margin-left: 6px;
+}
+.posts__first__username {
+  margin-left: 6px;
+  color: silver;
+  font-weight: 300;
+}
+.posts__first__username span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+}
+.verify {
+  margin-left: 3px;
+  color:#FF6C40;
+}
+.postss__details {
+  margin: 8px 30px;
+  overflow: hidden;
+}
+.postss__details__msg {
+  padding: 6px;
+}
+.postss__details__img {
+  width: 100%;
+  margin-top: 6px;
+}
+.postss__details__img img {
+  width: 100%;
+}
+
+.search {
+  font-size: 20px;
+  color: silver;
+}
+.keywords {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 25%;
+  padding: 20px 20px;
+}
+.key {
+  background: #f5f8fa;
+  padding: 15px;
+  border-radius: 5px;
+}
+.keyword__heading {
+  font-size: 20px;
+  border-bottom: 1px solid #e6ecf0;
+  padding-bottom: 8px;
+}
+.country {
+  font-size: 14px;
+  color: silver;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.keyword__name {
+  margin-bottom: 8px;
+}
+.keyword__tweets {
+  margin-top: 7px;
+  color: silver;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) { 
+  .posts {
+    width: 100%;
+    margin-left: 0px;
+    border-right: 1px solid #e6ecf0;
+  }
+  .create__control {
+    min-width: 220px;
+    min-height: 40px;
+    outline: none;
+  }
+  .note_container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 100px !important;
+    float: top;
+    margin-right: 50px;
+  }
+  .chart {
+    display: none;
+  }
+  form.create-note {
+    width: 300px !important;
+  }
+}
+
+
+.note {
+  background: rgb(231, 226, 226);
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: top;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+}
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.note_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: -540px;
+}
